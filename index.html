@@ -2,6 +2,7 @@
 <html lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
 <title>Nexis Digital | Modern Digital Experiences</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -29,17 +30,185 @@
                     <h1>Build Better Digital Experiences</h1> <!--there must only be one per page. It represents the top-level topic of the entire document.-->
                     <p>Helping businesses create modern,accessible, and high-converting digital products from concept to launch.</p>
                     <div class="hero-cta-group">
-                        <a href="#contact" class="btn-primary">Get Started</a>
-                        <a href="#portfolio" class="btn-secondary">Explore Work</a>
+                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                        <a href="#portfolio" class="btn btn-secondary">Explore Work</a>
                         </div>
                     </div>
                     <figure class="hero-media">
                         <img
                         src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&auto=format&fit=crop&q=80"
                         alt="Developer analyzing code and digital interfaces on a laptop"> <!--Critical accessibility requirement. Screen readers speaks this text for visually impaired visitors-->
-                        >
+
                         <figcaption>Engineering High-performance web solution</figcaption>
                     </figure>
+            </div>
+        </section>
+        <!--========================3. ABOUT US ======================-->
+        <section id="about " class="about-section section-padding">
+            <div class="container about-grid">
+                <!-- Supporting Image -->
+                 <figure class="about-media">
+                    <img
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&auto=format&fit=crop&q=80"
+                    alt="Collaborative design and engineering team working together"
+                    >
+                    <figcaption>Our multidisciplinary team in action</figcaption>
+
+                 </figure>
+                 <!--Company Details & Statistics-->
+                 <div class="about-copy">
+                    <span class="eyebrow">About Us</span>
+                    <h2>Crafting digital excellence since 2016</h2> <!--h2 directly succeds the hero preserving propwe accessibility order.-->
+                    <p>We are a dedicated team of engineers, designers, and strategists passionate about building web experiences that drive real businees growth.</p>
+                    <p>From early-stage startups to scaling enterprises, we handle end-to-end design, implementation, and long term optimization.</p>
+                    <!-- 4. Company statistics Required by company-->
+                     <div class="stats-grid">
+                        <div class="stat-card">
+                            <span class="stat-value">10+</span>  <!--.stat value and .stat-label are wrapped in seperate <span> elements, allowing css grid to format them cleanly later-->
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class=" stat-card">
+                            <span class="stat-value">150+</span>
+                            <span class="stat-label">projects completed</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value">50+</span>
+                            <span class="stat-label">Active Clients</span>
+                        </div>
+                        <div class=""stat-card">
+                        <span class="stat-value">15+</span>
+                        <span class="stat-label">Team Members</span>
+                    </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+        <!--=======================4.SERVICES===============-->
+        <section id="services" class="services-section section-padding bg-alt">
+            <div class="container">
+                <header class="section-heading text-center">
+                    <span class="eyebrow">What we offer</span>
+                    <h2>Our Core Services</h2>
+                    <p>Specialized digital solutions tailored to modern technical standards.</p>
+                </header>
+                <div class="services-grid">
+                    <!--Service 1-->
+                    <article class="service-card"> <!--Each card is marked as an independent, self-contained piece of content rather than a generic-->
+                        <span class="service-icon" aria-hidden="true">💻</span> <!--The emoji serve as visual icons; hidding them for assistive tech prevents screen readers from reading aloud "laptop computer emoji" before reading the title-->
+                        <h3>Web Development</h3>
+                        <p>Performant, secure, and semantic website built with clean architecture and modern web standards.</p>
+                        <a href="#contact" class="card-link">Learn More &rarr;</a>
+                        </article>
+                        <!--Service 3-->
+                        <article class="service-card">
+                            <span class="service-icon" aria-hidden="true">📈</span>
+                            <h3>Search Engine Optimization</h3>
+                            <p>On-page technical SEO, structure data implementation, and Core web vitals performance tuning.</p>
+                            <a href="#contact" class="card-link">Learn More &rarr;</a>
+                        </article>
+                        <!--Service 4-->
+                        <article class="service-card">
+                            <span class="service-icon" aria-hidden="true">🚀</span>
+                            <h3>Digital Marketing</h3>
+                            <p>Targeted Growth campaigns, conversion rate optimization, and transparent analytics dashboards.</p>
+                            <a href="#contact" class="card-link">Learn more &rarr;</a>
+
+                        </article>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!--============================5. WHY CHOOSE US========================-->
+        <section class="why-us-section section-padding">
+            <div class="container">
+                <header class="section-heading text-center">
+                    <span class="eyebrow">Our Advantage</span>
+                    <h2>Why Choose Nexis Digital</h2>
+                    <p>Delivering measurable results with zero guesswork.</p>
+                    </header>
+                    <div class="reasons-grid">
+                        <articles class="reason-card">
+                            <span class="reason-num">01</span>
+                            <h3>Experienced Team</h3>
+                            <p>Senior-level developers and UX specialists with decades of combined product experience.</p>
+                        </articles>
+                        <article class="reason-card">
+                            <span class="reason-num">02</span>
+                            <h3>Quality work</h3>
+                            <p>Through code reviews, accessibility verification, and cross-browser reliability testing</p>
+                        </article>
+                        <article class ="reason-card">
+                            <span class="reason-num">03</span>
+                            <h3>On-Time Delivery</h3>
+                            <p>Transparent sprint schedules, realistics deadlines, weekly deployment check-ins.</p>
+                        </article>
+                        <articles class="reason-card">
+                            <span class="reason-num">04</span>
+                            <h3>Ongoing Support</h3>
+                            <p>Continous maintainenace, security patches, and proactive platform update post-launch.</p>
+                        </articles>
+                    </div>
+            
+            </div>
+        </section>
+        <!--=======================6.PORTFOLIO / PROJECTS==============================-->
+        <section id="portfolio" class="portfolio-section section-padding bg-alt">
+            <div class="container">
+                <header class="section-heading text-center">
+                    <span class="eyebrow">Case Studies</span>
+                    <h2>Featured Projects</h2>
+                    <p>A sample of our recent engineering and product design engagements.</p>
+
+                </header>
+                <div class="portfolio-grid">
+                    <!--Project 1-->
+                    <article class="project-card">
+                        <figure class="project-media">
+                            <img 
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop&q=80"
+                            alt ="Cloud SaaS analytics Platform interface" >
+                        </figure>
+                        <div class="project-body">
+                            <span class="project-tag">Web Application</span>
+                            <h3>Vortex Anlaytics CLoud</h3>
+                            <p>Real-time data visulaization dashboard designed for multi-region server monitoring.</p>
+                            <a href="#contact" class="card-link">View project &rarr;</a>
+
+                        </div>
+                    </article>
+                    <!--Project 2-->
+                    <article class="project-card">
+                        <figure class="project-media">
+                            <img 
+                            src="https://images.unsplash.com/photo-1556742049-0a67e557224f?w=600&auto=format&fit=crop&q=80"
+                            alt="Modern checkout and product Listing mobile interface" >
+                        </figure>
+                        <div class="project-body">
+                            <span class="project-tag">E-commerce</span>
+                            <h3> Apex Apparel Storefront</h3>
+                            <p>Headless shopping experience featuring sub-second page loads and mobile checkout.</p>
+                            <a href="#contact" class="card-link">view project &rarr;</a>
+
+                        </div>
+                    </article>
+                    <!---Project 3-->
+                    <article class="project-card">
+                        <figure class="project-media">
+                            <img 
+                            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&auto=format&fit=crop&q=80"
+                            alt="Clinical patient management portal web application"
+                            >
+                        </figure>
+                        <div class="project-body">
+                            <span class="project-tag">UI/UX & Platform</span>
+                            <h3>PulseCare Portol</h3>
+                            <p>HIPAA-compliant telemedicine dashboard built for both patients and clincians.</p>
+                            <a href="#contact" class="card-link">View Project &rarr;</a>
+                            
+                        </div>
+                    </article>
+
+                </div>
             </div>
         </section>
     </main>
