@@ -135,6 +135,16 @@ img {
 .card-link:hover {
   text-decoration: underline;
 }
+/* Accessibility: High-visibility focus indicators for keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+}
 
 /* ================= 3. HEADER & NAV (FLEXBOX) ================= */
 .site-header {
@@ -560,10 +570,30 @@ img {
 .faq-item summary {
   font-weight: 700;
   cursor: pointer;
-  outline: none;
   font-size: 1.05rem;
   color: var(--text-dark);
+  list-style: none; /* Removes default triangle in standard browsers */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.faq-item summary::-webkit-details-marker {
+  display: none; /* Removes default triangle in WebKit/Blink */
+}
+
+.faq-item summary::after {
+  content: "+";
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--primary);
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
 
 .faq-item p {
   margin-top: 1rem;
@@ -737,8 +767,34 @@ img {
 
 @media (max-width: 650px) {
   .nav-menu {
-    display: none; /* Can be toggled with mobile menu or left clean for strict CSS */
+    display: none;
   }
+
+  .nav-wrapper {
+    justify-content: space-between;
+  }
+
+  .site-header .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
   .hero-copy h1 {
     font-size: 2.2rem;
