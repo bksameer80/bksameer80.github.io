@@ -811,4 +811,29 @@ summary:focus-visible {
   .stats-grid {
     grid-template-columns: 1fr;
   }
+
+/* ================= 15. INNER PAGE BANNER ================= */
+.page-banner {
+  background-color: var(--bg-alt);
+  border-bottom: 1px solid var(--border-light);
+  padding: 4rem 0 3rem 0;
+}
+
+.page-banner h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.page-banner p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+
+/* Active Link State */
+.nav-menu a.active {
+  color: var(--primary);
+  font-weight: 700;
 }
